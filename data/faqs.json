@@ -1,0 +1,17 @@
+[
+  { "question": "How do I track my order?", "answer": "Log into your account and go to 'My Orders'. Click on your active order to see real-time tracking.", "category": "orders" },
+  { "question": "Can I cancel my order after placing it?", "answer": "You can cancel within 2 minutes of placing the order. After food preparation begins, cancellation is not possible.", "category": "orders" },
+  { "question": "What if my order is cold when delivered?", "answer": "We apologize! Please contact us immediately at support@email.com with your order ID for a refund or replacement.", "category": "quality" },
+  { "question": "Do you accept UPI payments?", "answer": "Yes, we accept all major UPI apps (GooglePay, PhonePe, Paytm), Credit/Debit cards, and Net Banking.", "category": "payments" },
+  { "question": "How do I redeem my loyalty points?", "answer": "On the checkout page, you will see an option to 'Apply Points' if you have a sufficient balance.", "category": "loyalty" },
+  { "question": "Is there a minimum order value for delivery?", "answer": "There is no minimum order value, but orders below ₹500 attract a small delivery fee.", "category": "orders" },
+  { "question": "Do you have vegan options?", "answer": "Yes, look for the green leaf icon on our menu. We offer almond and oat milk alternatives for beverages.", "category": "quality" },
+  { "question": "How do I find a store near me?", "answer": "Use the 'Locations' tab in the app and enable GPS to find the nearest outlet.", "category": "locations" },
+  { "question": "Can I schedule an order for later?", "answer": "Yes, you can schedule an order up to 24 hours in advance on the checkout screen.", "category": "orders" },
+  { "question": "Why was my payment deducted but order not placed?", "answer": "This is usually a temporary bank hold. The amount will be auto-refunded within 48 hours. If not, contact support.", "category": "payments" },
+  { "question": "Are your stores open 24/7?", "answer": "Most stores close by 11 PM, but our Aerocity and Airport outlets are open 24/7.", "category": "locations" },
+  { "question": "How long do my loyalty points last?", "answer": "Points expire 12 months after they are earned.", "category": "loyalty" },
+  { "question": "Do you offer corporate catering?", "answer": "Yes, for bulk orders and corporate events, please email bulk@email.com.", "category": "services" },
+  { "question": "Can I modify my delivery address after placing an order?", "answer": "Address changes are only possible if the rider hasn't picked up the order yet. Please contact support immediately.", "category": "orders" },
+  { "question": "Is nutritional info available?", "answer": "Yes, you can click on any product to view calories and allergen information.", "category": "quality" }
+]

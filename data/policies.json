@@ -1,0 +1,73 @@
+[
+  {
+    "type": "refund",
+    "title": "Refund and Return Policy",
+    "content": "We aim to ensure satisfaction with every order. Refunds are processed based on product category and time of reporting.",
+    "sections": [
+      {
+        "heading": "Refund Eligibility",
+        "details": "Products can be refunded within 24 hours of purchase. Food items must be unopened and in original packaging. Beverages can be refunded if quality issues are reported within 30 minutes."
+      },
+      {
+        "heading": "Refund Process",
+        "details": "Contact customer support with your Order ID and reason for the request. Approved refunds are processed to the original payment method within 3-5 business days."
+      }
+    ]
+  },
+  {
+    "type": "loyalty",
+    "title": "Loyalty Program",
+    "content": "Join our rewards program to save on every sip and bite. Points are valid for 1 year from the date of earning.",
+    "sections": [
+      {
+        "heading": "Earning Points",
+        "details": "Earn 10 loyalty points for every ₹100 spent on any order (excluding taxes)."
+      },
+      {
+        "heading": "Redemption",
+        "details": "Redeem 100 points = ₹50 discount. Points can be applied at checkout."
+      }
+    ]
+  },
+  {
+    "type": "delivery",
+    "title": "Delivery Policy",
+    "content": "We strive to deliver your coffee hot and your salads fresh. Delivery times may vary based on traffic and weather conditions.",
+    "sections": [
+      {
+        "heading": "Delivery Fees",
+        "details": "Free delivery on all orders above ₹500. A standard fee of ₹40 applies to orders below ₹500."
+      },
+      {
+        "heading": "Timings & Tracking",
+        "details": "Standard delivery within 30-45 minutes. Real-time tracking is available in the app once the rider picks up your order."
+      }
+    ]
+  },
+  {
+    "type": "safety",
+    "title": "Food Safety & Quality",
+    "content": "Your health is our priority. We adhere to FSSAI standards and strict internal hygiene protocols.",
+    "sections": [
+      {
+        "heading": "Hygiene Protocols",
+        "details": "All kitchen staff wear mandatory masks, hairnets, and gloves. Temperature checks are conducted daily."
+      },
+      {
+        "heading": "Allergen Information",
+        "details": "While we take precautions, our kitchen handles nuts, dairy, and gluten. Cross-contamination cannot be 100% ruled out."
+      }
+    ]
+  },
+  {
+    "type": "privacy",
+    "title": "Privacy Policy",
+    "content": "We respect your data and strictly limit how it is used. We do not sell your personal information to third parties.",
+    "sections": [
+      {
+        "heading": "Data Collection",
+        "details": "We collect your name, phone number, and location solely for the purpose of order fulfillment and delivery coordination."
+      }
+    ]
+  }
+]

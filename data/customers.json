@@ -1,0 +1,257 @@
+[
+  {
+    "customer_id": "CUST001",
+    "name": "Priya Sharma",
+    "email": "priya.sharma@email.com",
+    "phone": "+91-9876543210",
+    "location": { "latitude": 28.6139, "longitude": 77.2090, "city": "Delhi", "address": "Connaught Place, New Delhi" },
+    "preferences": { "favorite_products": ["PROD002", "PROD020"], "dietary_restrictions": ["vegetarian"], "preferred_temperature": "hot" },
+    "order_history": [
+      { "order_id": "ORD1001", "store_id": "STORE001", "date": "2024-11-28", "items": ["PROD002", "PROD020"], "total": 400, "status": "delivered" }
+    ],
+    "loyalty_points": 250,
+    "join_date": "2023-06-15"
+  },
+  {
+    "customer_id": "CUST002",
+    "name": "Rahul Verma",
+    "email": "rahul.v@email.com",
+    "phone": "+91-9988776655",
+    "location": { "latitude": 28.4595, "longitude": 77.0266, "city": "Gurgaon", "address": "Sector 56, Gurgaon" },
+    "preferences": { "favorite_products": ["PROD011", "PROD018"], "dietary_restrictions": [], "preferred_temperature": "cold" },
+    "order_history": [
+      { "order_id": "ORD1002", "store_id": "STORE002", "date": "2024-12-03", "items": ["PROD011", "PROD018"], "total": 480, "status": "in_transit" },
+      { "order_id": "ORD0980", "store_id": "STORE002", "date": "2024-11-20", "items": ["PROD011"], "total": 240, "status": "delivered" }
+    ],
+    "loyalty_points": 500,
+    "join_date": "2023-01-10"
+  },
+  {
+    "customer_id": "CUST003",
+    "name": "Aditi Rao",
+    "email": "aditi.rao@email.com",
+    "phone": "+91-8899001122",
+    "location": { "latitude": 28.5355, "longitude": 77.3910, "city": "Noida", "address": "Sector 137, Noida" },
+    "preferences": { "favorite_products": ["PROD001"], "dietary_restrictions": ["vegan"], "preferred_temperature": "hot" },
+    "order_history": [],
+    "loyalty_points": 0,
+    "join_date": "2024-11-01"
+  },
+  {
+    "customer_id": "CUST004",
+    "name": "Vikram Singh",
+    "email": "vikram.singh@email.com",
+    "phone": "+91-7766554433",
+    "location": { "latitude": 28.5823, "longitude": 77.0500, "city": "Delhi", "address": "Sector 12, Dwarka" },
+    "preferences": { "favorite_products": ["PROD006", "PROD027"], "dietary_restrictions": [], "preferred_temperature": "hot" },
+    "order_history": [
+      { "order_id": "ORD1005", "store_id": "STORE006", "date": "2024-12-02", "items": ["PROD006", "PROD027", "PROD027"], "total": 310, "status": "delivered" }
+    ],
+    "loyalty_points": 120,
+    "join_date": "2024-08-20"
+  },
+  {
+    "customer_id": "CUST005",
+    "name": "Sneha Gupta",
+    "email": "sneha.g@email.com",
+    "phone": "+91-9123456789",
+    "location": { "latitude": 28.5244, "longitude": 77.1855, "address": "Green Park Main, Delhi", "city": "Delhi" },
+    "preferences": { "favorite_products": ["PROD015", "PROD025"], "dietary_restrictions": ["gluten_free"], "preferred_temperature": "cold" },
+    "order_history": [
+      { "order_id": "ORD1009", "store_id": "STORE008", "date": "2024-12-03", "items": ["PROD004", "PROD025"], "total": 560, "status": "preparing" }
+    ],
+    "loyalty_points": 340,
+    "join_date": "2023-09-12"
+  },
+  {
+    "customer_id": "CUST006",
+    "name": "Amit Khanna",
+    "email": "amit.k@email.com",
+    "phone": "+91-9811223344",
+    "location": { "latitude": 28.7041, "longitude": 77.1025, "city": "Delhi", "address": "Pitampura, Delhi" },
+    "preferences": { "favorite_products": ["PROD019"], "dietary_restrictions": [], "preferred_temperature": "any" },
+    "order_history": [
+      { "order_id": "ORD1012", "store_id": "STORE014", "date": "2024-11-29", "items": ["PROD019", "PROD011"], "total": 500, "status": "cancelled" }
+    ],
+    "loyalty_points": 50,
+    "join_date": "2024-02-14"
+  },
+  {
+    "customer_id": "CUST007",
+    "name": "Zoya Akhtar",
+    "email": "zoya.a@email.com",
+    "phone": "+91-9898989898",
+    "location": { "latitude": 28.5603, "longitude": 77.2925, "city": "Delhi", "address": "Jamia Nagar, Okhla" },
+    "preferences": { "favorite_products": ["PROD007", "PROD029"], "dietary_restrictions": ["halal"], "preferred_temperature": "hot" },
+    "order_history": [
+      { "order_id": "ORD1022", "store_id": "STORE015", "date": "2024-12-01", "items": ["PROD007"], "total": 210, "status": "delivered" }
+    ],
+    "loyalty_points": 180,
+    "join_date": "2023-12-25"
+  },
+  {
+    "customer_id": "CUST008",
+    "name": "Manish Malhotra",
+    "email": "manish.m@email.com",
+    "phone": "+91-9000111222",
+    "location": { "latitude": 28.4798, "longitude": 77.0878, "city": "Gurgaon", "address": "Udyog Vihar, Gurgaon" },
+    "preferences": { "favorite_products": ["PROD006"], "dietary_restrictions": [], "preferred_temperature": "hot" },
+    "order_history": [
+      { "order_id": "ORD1035", "store_id": "STORE002", "date": "2024-12-03", "items": ["PROD006", "PROD006", "PROD020"], "total": 480, "status": "delivered" }
+    ],
+    "loyalty_points": 890,
+    "join_date": "2022-05-30"
+  },
+  {
+    "customer_id": "CUST009",
+    "name": "Kavita Krishnamurthy",
+    "email": "kavita.k@email.com",
+    "phone": "+91-8877665544",
+    "location": { "latitude": 28.6219, "longitude": 77.0878, "city": "Delhi", "address": "Janakpuri District Center" },
+    "preferences": { "favorite_products": ["PROD010", "PROD026"], "dietary_restrictions": [], "preferred_temperature": "warm" },
+    "order_history": [],
+    "loyalty_points": 10,
+    "join_date": "2024-11-25"
+  },
+  {
+    "customer_id": "CUST010",
+    "name": "Arjun Rampal",
+    "email": "arjun.r@email.com",
+    "phone": "+91-9911991199",
+    "location": { "latitude": 28.5273, "longitude": 77.2529, "city": "Delhi", "address": "Greater Kailash 1" },
+    "preferences": { "favorite_products": ["PROD009", "PROD014"], "dietary_restrictions": [], "preferred_temperature": "cold" },
+    "order_history": [
+      { "order_id": "ORD1040", "store_id": "STORE009", "date": "2024-11-30", "items": ["PROD014", "PROD022"], "total": 500, "status": "delivered" }
+    ],
+    "loyalty_points": 400,
+    "join_date": "2023-04-10"
+  },
+  {
+    "customer_id": "CUST011",
+    "name": "Neha Kakkar",
+    "email": "neha.k@email.com",
+    "phone": "+91-9111222333",
+    "location": { "latitude": 28.6692, "longitude": 77.4538, "city": "Ghaziabad", "address": "Indirapuram" },
+    "preferences": { "favorite_products": ["PROD003"], "dietary_restrictions": ["vegetarian"], "preferred_temperature": "hot" },
+    "order_history": [
+      { "order_id": "ORD1055", "store_id": "STORE004", "date": "2024-12-02", "items": ["PROD003"], "total": 260, "status": "delivered" }
+    ],
+    "loyalty_points": 110,
+    "join_date": "2024-09-05"
+  },
+  {
+    "customer_id": "CUST012",
+    "name": "Ranbir Kapoor",
+    "email": "ranbir.k@email.com",
+    "phone": "+91-8800880088",
+    "location": { "latitude": 28.5450, "longitude": 77.2730, "city": "Delhi", "address": "Kalkaji" },
+    "preferences": { "favorite_products": ["PROD008"], "dietary_restrictions": [], "preferred_temperature": "hot" },
+    "order_history": [
+      { "order_id": "ORD1061", "store_id": "STORE009", "date": "2024-12-03", "items": ["PROD008", "PROD021"], "total": 420, "status": "ready_for_pickup" }
+    ],
+    "loyalty_points": 300,
+    "join_date": "2023-11-11"
+  },
+  {
+    "customer_id": "CUST013",
+    "name": "Deepika P",
+    "email": "deepika.p@email.com",
+    "phone": "+91-9988001122",
+    "location": { "latitude": 28.5355, "longitude": 77.3910, "city": "Noida", "address": "Sector 44, Noida" },
+    "preferences": { "favorite_products": ["PROD025", "PROD017"], "dietary_restrictions": ["low_carb"], "preferred_temperature": "cold" },
+    "order_history": [
+      { "order_id": "ORD1070", "store_id": "STORE004", "date": "2024-11-28", "items": ["PROD025"], "total": 280, "status": "delivered" }
+    ],
+    "loyalty_points": 550,
+    "join_date": "2022-12-01"
+  },
+  {
+    "customer_id": "CUST014",
+    "name": "Virat K",
+    "email": "virat.k@email.com",
+    "phone": "+91-9876598765",
+    "location": { "latitude": 28.6500, "longitude": 77.1300, "city": "Delhi", "address": "West Punjabi Bagh" },
+    "preferences": { "favorite_products": ["PROD012", "PROD023"], "dietary_restrictions": ["vegan"], "preferred_temperature": "cold" },
+    "order_history": [
+      { "order_id": "ORD1082", "store_id": "STORE013", "date": "2024-12-03", "items": ["PROD012"], "total": 190, "status": "in_transit" }
+    ],
+    "loyalty_points": 1000,
+    "join_date": "2021-08-15"
+  },
+  {
+    "customer_id": "CUST015",
+    "name": "Saina Nehwal",
+    "email": "saina.n@email.com",
+    "phone": "+91-9123123123",
+    "location": { "latitude": 28.4500, "longitude": 77.0700, "city": "Gurgaon", "address": "Sohna Road" },
+    "preferences": { "favorite_products": ["PROD005"], "dietary_restrictions": [], "preferred_temperature": "hot" },
+    "order_history": [],
+    "loyalty_points": 0,
+    "join_date": "2024-12-02"
+  },
+  {
+    "customer_id": "CUST016",
+    "name": "Rohan Mehra",
+    "email": "rohan.m@email.com",
+    "phone": "+91-9999888877",
+    "location": { "latitude": 28.6200, "longitude": 77.2000, "city": "Delhi", "address": "Gole Market" },
+    "preferences": { "favorite_products": ["PROD018", "PROD001"], "dietary_restrictions": [], "preferred_temperature": "hot" },
+    "order_history": [
+      { "order_id": "ORD1090", "store_id": "STORE001", "date": "2024-11-25", "items": ["PROD001", "PROD018"], "total": 360, "status": "delivered" }
+    ],
+    "loyalty_points": 150,
+    "join_date": "2024-01-20"
+  },
+  {
+    "customer_id": "CUST017",
+    "name": "Ishaan Khatter",
+    "email": "ishaan.k@email.com",
+    "phone": "+91-9898767654",
+    "location": { "latitude": 28.5500, "longitude": 77.2500, "city": "Delhi", "address": "Nehru Place" },
+    "preferences": { "favorite_products": ["PROD011"], "dietary_restrictions": [], "preferred_temperature": "cold" },
+    "order_history": [
+      { "order_id": "ORD1095", "store_id": "STORE005", "date": "2024-12-01", "items": ["PROD011", "PROD021"], "total": 430, "status": "delivered" }
+    ],
+    "loyalty_points": 210,
+    "join_date": "2023-10-10"
+  },
+  {
+    "customer_id": "CUST018",
+    "name": "Ananya Panday",
+    "email": "ananya.p@email.com",
+    "phone": "+91-9765432109",
+    "location": { "latitude": 28.4800, "longitude": 77.0900, "city": "Gurgaon", "address": "Golf Course Road" },
+    "preferences": { "favorite_products": ["PROD013"], "dietary_restrictions": ["lactose_free"], "preferred_temperature": "cold" },
+    "order_history": [
+      { "order_id": "ORD1100", "store_id": "STORE002", "date": "2024-12-03", "items": ["PROD013", "PROD025"], "total": 540, "status": "pending" }
+    ],
+    "loyalty_points": 60,
+    "join_date": "2024-05-05"
+  },
+  {
+    "customer_id": "CUST019",
+    "name": "Kartik Aaryan",
+    "email": "kartik.a@email.com",
+    "phone": "+91-9009009009",
+    "location": { "latitude": 28.6900, "longitude": 77.1900, "city": "Delhi", "address": "Model Town" },
+    "preferences": { "favorite_products": ["PROD002", "PROD024"], "dietary_restrictions": [], "preferred_temperature": "hot" },
+    "order_history": [
+      { "order_id": "ORD1105", "store_id": "STORE011", "date": "2024-11-27", "items": ["PROD002"], "total": 220, "status": "delivered" }
+    ],
+    "loyalty_points": 450,
+    "join_date": "2023-02-28"
+  },
+  {
+    "customer_id": "CUST020",
+    "name": "Sara Ali Khan",
+    "email": "sara.k@email.com",
+    "phone": "+91-8989898989",
+    "location": { "latitude": 28.5700, "longitude": 77.3200, "city": "Noida", "address": "Sector 15" },
+    "preferences": { "favorite_products": ["PROD001", "PROD030"], "dietary_restrictions": [], "preferred_temperature": "hot" },
+    "order_history": [
+      { "order_id": "ORD1110", "store_id": "STORE004", "date": "2024-12-03", "items": ["PROD001", "PROD001", "PROD030"], "total": 450, "status": "delivered" }
+    ],
+    "loyalty_points": 330,
+    "join_date": "2023-07-07"
+  }
+]
