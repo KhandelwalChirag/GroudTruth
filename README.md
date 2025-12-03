@@ -1,6 +1,6 @@
 # ☕ GroudTruth | Hyper-Personalized Customer Support Agent MVP
 
-> **Brew & Bite AI**: Context-Aware Customer Experience Automation  
+> **AwareX**: Context-Aware Customer Experience Automation  
 > Built with LangGraph, RAG (FAISS), Gemini API, and Streamlit
 
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
