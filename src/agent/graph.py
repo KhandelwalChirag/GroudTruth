@@ -8,9 +8,8 @@ from src.agent.nodes import (
 )
 
 def build_agent_graph():
-    """
-    Constructs the LangGraph workflow.
-    """
+    # Langgraph workflow
+
     workflow = StateGraph(AgentState)
 
     # 1. Add Nodes
@@ -29,5 +28,5 @@ def build_agent_graph():
     # 3. Compile
     return workflow.compile()
 
-# Singleton instance
+# Single instance
 agent_app = build_agent_graph()

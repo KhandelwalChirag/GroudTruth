@@ -12,14 +12,15 @@ from src.rag.retriever import get_retriever
 loader = get_data_loader()
 retriever = get_retriever()
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model=settings.GEMINI_MODEL,
     google_api_key=settings.GOOGLE_API_KEY,
-    temperature=0.7
+    temperature=settings.TEMPERATURE,
+    top_p=settings.TOP_P,
+    max_output_tokens=settings.MAX_TOKENS
 )
 
 # Helper function to format order history
 def _format_order_history(orders: list, data_loader) -> str:
-    """Format order history for context injection"""
     if not orders:
         return ""
     
@@ -44,25 +45,32 @@ def _format_order_history(orders: list, data_loader) -> str:
     return order_text
 
 def retrieve_customer_info(state: AgentState):
+
     """Node: Fetch customer profile based on ID."""
+    
     user_id = state.get("user_id")
     customer = loader.get_customer(user_id)
     
     if not customer:
-        return {"user_info": {"name": "Guest", "loyalty_points": 0, "preferences": {}, "location": {}}}
+        return {"user_info": {"name": "Guest", "loyalty_points": 0, "preferences": {}, "location": {}, "order_history": []}}
     
-    # Ensure customer has required fields for downstream processing
+    # Ensuring customer has required fields for processing
     if "location" not in customer:
         customer["location"] = {}
+    if "order_history" not in customer:
+        customer["order_history"] = []
         
     return {"user_info": customer}
 
 def check_location_context(state: AgentState):
+    
     """Node: Find nearest stores based on customer location."""
+    
     user_info = state.get("user_info", {})
     cust_loc = user_info.get("location", {})
     
     # Handle missing location data
+    
     if not cust_loc or not cust_loc.get("latitude") or not cust_loc.get("longitude"):
         return {"location_context": {
             "nearest_store": "Unknown",
@@ -75,7 +83,7 @@ def check_location_context(state: AgentState):
         nearby = find_nearby_locations(
             user_lat=cust_loc.get("latitude"),
             user_lon=cust_loc.get("longitude"),
-            max_distance_km=50
+            max_distance_km=10
         )
         
         if nearby:
@@ -83,7 +91,9 @@ def check_location_context(state: AgentState):
             context = {
                 "nearest_store": store.get('name', 'Unknown'),
                 "distance": round(store.get('distance_km', 0), 2),
-                "city": cust_loc.get("city", "Unknown")
+                "city": cust_loc.get("city", "Unknown"),
+                "store_lat": store['location']['latitude'],
+                "store_lon": store['location']['longitude']
             }
         else:
             context = {
@@ -109,17 +119,14 @@ def retrieve_knowledge(state: AgentState):
     if not messages:
         return {"rag_context": "", "order_context": ""}
     
-    # Get last user message
     last_message = messages[-1].content
     last_message_lower = last_message.lower()
     
-    # Check if query is about orders/tracking
     order_keywords = ["order", "track", "where is", "status", "deliver", "shipped", "transit"]
     is_order_query = any(keyword in last_message_lower for keyword in order_keywords)
     
     order_context = ""
     if is_order_query and user_info.get("order_history"):
-        # Extract order information for order-related queries
         orders = user_info.get("order_history", [])
         if orders:
             order_context = _format_order_history(orders, loader)
@@ -131,7 +138,7 @@ def retrieve_knowledge(state: AgentState):
     return {"rag_context": rag_context, "order_context": order_context}
 
 def generate_response(state: AgentState):
-    """Node: Call Gemini to generate the final answer."""
+    
     user_info = state.get("user_info", {})
     loc_ctx = state.get("location_context", {})
     rag_ctx = state.get("rag_context", "")
@@ -143,7 +150,6 @@ def generate_response(state: AgentState):
     if order_ctx:
         combined_context = order_ctx + "\n\n" + rag_ctx
     
-    # Prepare Prompt Inputs
     prompt_inputs = {
         "user_name": user_info.get("name", "Guest"),
         "loyalty_points": user_info.get("loyalty_points", 0),
@@ -165,7 +171,7 @@ def generate_response(state: AgentState):
         
         return {
             "final_response": response.content,
-            "messages": [ai_response]  # Return as list for operator.add to work
+            "messages": [ai_response]  
         }
     except Exception as e:
         print(f"Error generating response: {e}")

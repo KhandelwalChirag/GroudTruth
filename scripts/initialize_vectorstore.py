@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-"""
-Initialize the vector store with documents from data files
-Run this script once after setting up your data files
-"""
 import sys
 from pathlib import Path
 
@@ -19,7 +14,6 @@ def main():
     print("Vector Store Initialization")
     print("=" * 60)
     
-    # Validate settings
     try:
         settings.validate()
         print("✓ Configuration validated")
@@ -27,7 +21,6 @@ def main():
         print(f"✗ Configuration error: {e}")
         return False
     
-    # Check data files exist
     required_files = [
         settings.POLICIES_FILE,
         settings.FAQS_FILE,

@@ -17,7 +17,7 @@ class Settings:
     GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
     
     # Model Configuration
-    GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-pro")
+    GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
     EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "models/embedding-001")
     
     # Application Settings

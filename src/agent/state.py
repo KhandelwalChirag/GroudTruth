@@ -9,7 +9,6 @@ class AgentState(TypedDict):
     messages: Annotated[List[BaseMessage], operator.add]
     user_id: str
     
-    # Retrieved Context Data
     user_info: Dict[str, Any]      
     location_context: Dict[str, Any]
     rag_context: str
