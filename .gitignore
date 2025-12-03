@@ -1,1 +1,42 @@
 .github
+.env
+progress.md
+problem-statements/
+Template_README.md
+
+# Environment
+.env
+venv/
+env/
+*.pyc
+__pycache__/
+.python-version
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data & Models
+*.faiss
+*.pkl
+*.index
+data/vectorstore/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
